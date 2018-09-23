@@ -1,0 +1,6 @@
+public static <T extends Comparable<? super T>>
+    void concatenate(LinkedList<T> a, LinkedList<T> b) {
+    for (int i = a.size-1; i >= 0; i--) {
+        addFirst(b, get(a, i));
+    }
+}
