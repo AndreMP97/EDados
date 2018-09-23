@@ -1,0 +1,23 @@
+// Uma classe simples para representar um aluno
+class Aluno {
+    // Atributos da classe (variáveis para conter informação)
+    String nome;
+    int numero;
+
+    // Construtor "padrão"
+    Aluno() {
+        nome   = "indefinido";
+        numero = -1;
+    }
+}
+
+// Classe principal contendo o main para testar a classe Aluno
+public class TestAluno {
+    public static void main(String[] args) {
+        Aluno a = new Aluno();
+
+	// Escrever o conteúdo do aluno "a"
+	// Note que o operador + é usado para concatenar duas strings
+	System.out.println("Aluno a | numero: " + a.numero + " | nome: " + a.nome);
+    }
+}
