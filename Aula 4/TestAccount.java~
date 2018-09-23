@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class TestAccount {
+    public static void main(String[] args) {
+	Scanner stdin = new Scanner(System.in);
+	int user=0;
+	while (user != 7) {
+	System.out.println("1) Conta com valor inicial a zero.");
+	System.out.println("2) Escolher o valor inicial da conta.");
+	System.out.println("3) Depositar dinheiro.");
+	System.out.println("4) Levantar dinheiro.");
+	System.out.println("5) Adicionar taxa de juro.");
+	System.out.println("6) Verificar saldo.");
+	System.out.println("7) Sair.");
+	user=stdin.nextInt();
+	switch(user) {
+	case 1: Account a = new Account();
+	        break;
+	case 2: Account b = new Account(stdin.nextInt());
+	        break;
+	}
+	}
+    }
+}

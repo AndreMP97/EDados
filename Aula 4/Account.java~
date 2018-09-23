@@ -1,0 +1,9 @@
+class Account {
+    int balance;
+    Account () {
+	balance=0;
+    }
+    Account (int newBalance) {
+	balance=newBalance;
+    }
+}
